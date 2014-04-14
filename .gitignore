@@ -13,7 +13,6 @@ bin/
 gen/
 .settings
 server
-adapters
 .directory
 
 # Local configuration file (sdk path, etc)
