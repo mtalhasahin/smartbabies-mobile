@@ -1,20 +1,20 @@
 <!DOCTYPE HTML><html>
     <head>
         <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta charset="UTF-8">
-        <title>index</title>
-        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" name="viewport">
+        <title>nativeDroid - Theme for jQuery Mobile</title>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+		<!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
         <link href="worklight/worklight.css" rel="stylesheet">
-        <link href="images/favicon.png" rel="shortcut icon">
-        <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
-        <link href="css/main.css" rel="stylesheet">
-        <link href="jqueryMobile/jquery.mobile-1.4.1.css" rel="stylesheet">
-        <link href="jqueryMobile/jquery.mobile.external-png-1.4.1.css" rel="stylesheet">
-        <link href="jqueryMobile/jquery.mobile.icons-1.4.1.css" rel="stylesheet">
-        <link href="jqueryMobile/jquery.mobile.inline-png-1.4.1.css" rel="stylesheet">
-        <link href="jqueryMobile/jquery.mobile.inline-svg-1.4.1.css" rel="stylesheet">
-        <link href="jqueryMobile/jquery.mobile.structure-1.4.1.css" rel="stylesheet">
-        <link href="jqueryMobile/jquery.mobile.theme-1.4.1.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+		<!-- jQueryMobileCSS - original without styling -->
+        <link href="css/jquerymobile.css" rel="stylesheet">
+		<!-- nativeDroid core CSS -->
+        <link href="css/jquerymobile.nativedroid.css" rel="stylesheet">
+		<!-- nativeDroid: Light/Dark -->
+        <link href="css/jquerymobile.nativedroid.light.css" id="jQMnDTheme" rel="stylesheet">
+		<!-- nativeDroid: Color Schemes -->
+        <link href="css/jquerymobile.nativedroid.color.red.css" id="jQMnDColor" rel="stylesheet">
+		<!-- jQuery / jQueryMobile Scripts -->
         <script>
 		// Define WL namespace.
 		var WL = WL ? WL : {};
@@ -37,18 +37,27 @@
 		<script src="worklight/wljq.js"></script>
 		<script src="worklight/worklight.js"></script>
 		<script src="worklight/checksum.js"></script>
-		<script>window.$ = window.jQuery = WLJQ;</script>
-    		<script src="jqueryMobile/jquery.mobile-1.4.1.js"></script>
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+        <META CONTENT="20; URL=menu.html" HTTP-EQUIV="Refresh">
     </head>
-    <body style="display: none;">
-        <div data-role="page" id="page">
-            <div data-role="content" style="padding: 15px">
-    				<!--application UI goes here-->
-    				Hello Worklight
-    			</div>
+    <body>
+        <div data-role="page" data-theme="b">
+            <div data-role="content">   
+                <div data-nativedroid-background="http://nativedroid.godesign.ch/res/img/splashscreenbg.png" data-nativedroid-plugin="splashscreen" data-nativedroid-splashscreen-animation="fadeOut" data-nativedroid-splashscreen-time="20">
+                    <div class="splashScreenExample">
+                        <h1>Smart Babies</h1>
+                        <h2>Hoş Geldiniz</h2>
+                        <h3>Smarter healthcare for a smarter planet</h3>
+                        <div class="splashScreenDroid"></div>
+                    </div>				
+                </div>
+            </div>
+            <div data-position="fixed" data-role="header" data-tap-toggle="false" data-theme="b">
+                <h1>Smart Babies</h1>
+                <a data-ajax="false" href="#" target="_blank"><i class="icon-reorder"></i></a>
+            </div>
         </div>
-        <script src="js/initOptions.js"></script>
-    		<script src="js/main.js"></script>
-    		<script src="js/messages.js"></script>
+        <script src="js/nativedroid.script.js"></script>
     </body>
 </html>

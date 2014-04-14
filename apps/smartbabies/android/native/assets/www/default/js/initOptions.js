@@ -21,7 +21,7 @@
 	//   Requires the FIPS 140-2 optional feature to be enabled also.
 	//enableFIPS : false,
 	
-	// # Application Logger, see documentation under WL.Logger for more details.
+    // # Application Logger, see documentation more details.
     // - enabled - Determines if log messages are shown (true) or not (false)
     // - level - Logging level, most to least verbose: 'debug', 'log', 'info', 'warn', 'error'
     // - stringify - Turn arguments into strings before printing to the console (true) or not (false)
@@ -30,8 +30,9 @@
     // - tag.package - Append the package tag  (e.g. [my.pkg] Message) to the message if there is one
     // - whitelist - Array of package names to show (e.g ['my.pkg'])
     // - blacklist - Array of package names to ignore (e.g ['my.pkg'])
-	logger : {enabled: true, level: 'debug', stringify: true, pretty: false,
-		tag: {level: false, pkg: true}, whitelist: [], blacklist: []},
+    // - nativeOptions - Object with configuration specific to underlying native behavior (Android and IOS only)
+    logger : {enabled: true, level: 'debug', stringify: true, pretty: false,
+      tag: {level: false, pkg: true}, whitelist: [], blacklist: [], nativeOptions: {capture: false}},
 	
  	//#Application Analytics
 	// - enabled - Determines if analytics messages are sent to the server
